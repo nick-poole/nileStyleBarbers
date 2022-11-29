@@ -17,20 +17,43 @@ body {
 header {
 
 }
+.covid_update {
+    background-color: blue;
+    color: white;
+}
+.btn {
+    
+}
 
+main {
+    display: grid;
+    max-width: 1150px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, min-content);
+}
 
 .card {
-    padding: 2rem;
-    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: ;
     box-shadow: 2.5rem 3.75rem 3rem -3rem;
+    border-radius: 15px;
+    padding: 30px 40px;  
 }
 
 .card_header {
+    display: flex;
+    align-items: center;
+    color: ;
+    margin-bottom: 10px;
+
 
 }
 .card-user {
 
 }
 .name {
+    font-weight: 600;
+    font-size: 15px;
 
 }
