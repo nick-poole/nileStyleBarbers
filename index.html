@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="border-yellow-400 py-80 h-max" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,8 +27,8 @@
     <!--script.js-->
     <script src="./js/script.js"></script>
 </head>
-<body class="bg-gradient-to-t from-cyan-500 to-[white] h-screen">
-    <header class="bg-white">
+  <body class="flex flex-col h-full min-h-full bg-cyan-500 antialiased">
+    <header class="bg-white border-purple-600">
         <nav class="flex justify-between items-center w-[92%] mx-auto">
           <div>
             <a href="index.html">
@@ -52,12 +52,20 @@
           </div>
         </nav>
     </header>
-    <main>
-          <div class="w-full">
+    <main class="border-white border-4 mx-auto h-screen  h-full w-full min-h-screen min-w-screen">
+          <div class="hidden w-full">
             <img class="block md:hidden w-inherit" src="images/storefront-remastered.jpeg" alt="">
-            
             <img class="hidden md:block w-inherit" src="images/dan-gold-07AAmZ1dECU-unsplash (2).jpg" alt="">
           </div>
+
+          <div class=" hidden border-green-500 m-2 flex flex-row justify-center items-center">
+            <img class="w-3/6 h-3/6" src="./icons/nilestyleicon.png" alt="">
+            
+          </div>
+          <div>
+              <h1 class=" text-2xl text-white">Redefining Authenticity</h1>
+              <p class="text-white">Nile Style is a modern barbershop with an old school vibe. Since 1998 we have served the community with a family-friendly and professional atmosphere. Nile Style Barbershop serves men, women, and children. We accept appointments and walk-ins. Come in and enjoy free wi-fi, flat screen TV's, mellow music, and a friendly atmosphere.</p>
+            </div>
        
     
         <!-- 
@@ -134,10 +142,102 @@
         </section>
            -->
 
-    </main>
-    <footer>
+      <!--Contact Section-->
+      <section class=" hidden border-pink-400 border-4 flex flex-col lg:flex-row space-y-8 justify-evenly m-8 p-8 flex   bg-sky-800 text-white">
+        <!--CTA    info-->
+        <div class="cta section border-purple-400 border-4 max-w-screen-sm">
+          <!--Heading & text-->
+          <div class="border-lime-700 border-4">
+             <h1 class="font-bold text-4xl tracking-wide">Contact US</h1>
+             <p class="pt-4 text-sky-300 text-sm">We'd love to hear from you! If you have any questions, concerns or inquiries, reach out and we will    respond as soon as possible.</p>
+          </div>
+          <div class="border-green-400 border-4 flex flex-col space-y-4">
+             <div class=" inline-flex space-x-2 items-center">
+                 <ion-icon name="call" class="text-sky-300 text-xl"></ion-icon>
+                 <a class="tracking-wide" href="tel:4104449411">(410)  444 - 9411</a>
+                 <span ></span>
+             </div>
+             <div class="inline-flex space-x-2 items-center">
+                 <ion-icon name="mail" class="text-sky-300 text-xl"></ion-icon>
+                 <span class="">contact@nilestylebarbers.com</span>
+             </div>
+             <div class="inline-flex space-x-2 items-center">
+                 <ion-icon name="location" class="text-sky-300 text-xl"></ion-icon>
+                 <span class="">​6622 Harford Rd. Baltimore, MD 21214</span>
+             </div>
+       </div>
+       <!--Logos-->
+       <div class="border-green-800 border-4 inline-flex space-x-4 items-center text-xl">
+          <a href="http://facebook.com/nilestylebarbershop">
+              <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="https://www.instagram.com/nilestylebarbers/">
+              <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a href="https://foursquare.com/v/nile-style-barbershop/4b588c07f964a520425d28e3">
+              <ion-icon name="logo-foursquare"></ion-icon>
+          </a>
+          <a href="https://www.yelp.com/biz/nile-style-barber-shop-baltimore">
+              <i class="fa-brands fa-yelp text-sm"></i>
+          </a>
+       </div>
+       <!--Google Maps Embed-->
+       <div class="h-2/4 max-w-screen-sm">
+         <iframe class="rounded rounded-lg shadow-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.696869746942!2d-76.55455508463585!3d39.3631006795014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c80f559a143e73%3A0xc9c35ae3a8259af5!2sNile%20Style%20Barber%20Shop!5e0!3m2!1sen!2sus!4v1678732841777!5m2!1sen!2sus"     width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+      </div>
+      <!--Form-->
+      <div class=" border-yellow-400 border-4 bg-white max-w-screen-sm rounded rounded-xl shadow-lg p-8 text-gray-600">
+          <form action="" class="flex flex-col space-y-4">
+              <div>
+                  <label class="text-sm">Name</label>
+                  <input class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-sky-400" type="text" placeholder="Name" required>
+              </div>
+              <div>
+                  <label class="text-sm">Email</label>
+                  <input class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-sky-400" type="Email" placeholder="Email">
+              </div>
+              <div>
+                  <label class="text-sm">Phone</label>
+                  <input class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-sky-400" type="tel" placeholder="(000) 000-000">
+              </div>
+              <div>
+                  <label class="text-sm">Message</label>
+                  <textarea class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-sky-400" rows="4" placeholder=""></textarea>
+              </div>
+              <button class="inline-block self-end bg-sky-800 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm">Send Message</button>
+          </form>
+      </div>
 
-    </footer>
-    
-</body>
+      
+
+       
+
+
+
+      </section>
+
+    </main>
+    <footer class="border-green-400 dark:bg-gray-800 absolute bottom-0">
+      <div class=" border-pink-800 w-full mx-0 container md:p-6 p-4 md:flex md:items-center md:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Contact</a>
+            </li>
+        </ul>
+        </div>
+  </footer>
+ 
+  </body>
 </html>

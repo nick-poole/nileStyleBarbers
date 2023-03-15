@@ -4,9 +4,13 @@
   margin: 0;
   padding: 0;
   border: 0;
-  box-sizing: border-box;
+  box-sizing:
   font-family: 'Alegreya Sans SC', 'Cairo', 'Roboto', sans-serif;
   /* background-color: #24252a; */
+}
+html,body {
+  height: 100%;
+  overflow: scroll;
 }
 
 /*

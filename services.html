@@ -1,30 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="border-black border-4 h-full" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
+
+    <!--Ionic CDN-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--Tailwind CDN-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" type="text/css" href="./styles/app.css"/>
 </head>
-<body>
-    <header>
-        <div class="logo">Nile Style</div>
-        <nav>
-            <ul class="nav_links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-            </ul>
+<body class="border-black border-4 flex flex-col h-full bg-cyan-500 antialiased">
+    <header class="bg-white">
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <a href="index.html">
+                    <img class="w-16 cursor-pointer" src="./icons/nilestyleicon.png" alt="Nile Style">
+                  </a>
+            </div>
+            <div class="nav-links duration-500 bg-white absolute md:static min-h-[60vh] md:min-h-fit w-full md:w-auto left-0 top-[-100%]  px-5">   
+                <ul class="flex flex-col justify-evenly gap-8 md:flex-row md:items-center md:gap-[4vw]">
+                    <li><a class="hover:text-gray-500" href="index.html">Home</a></li>
+                    <li><a class="hover:text-gray-500" href="about.html">About</a></li>
+                    <li><a class="hover:text-gray-500" href="services.html">Services</a></li>
+                    <li><a class="hover:text-gray-500" href="media.html">Media</a></li>
+                </ul>
+              </div>
+            <div class="flex items-center gap-6">
+                <a class="" href="contact.html">
+                  <button class="bg-cyan-500 text-white px-5 py-2 rounded rounded-m hover:bg-[red]">Contact</button>
+                </a>
+                <ion-icon onclick="onToggleMenu(this)" class="text-3xl cursor-pointer md:hidden" name="menu"></ion-icon>
+            </div>
         </nav>
-        <a class="cta" href="contact.html"><button>Contact</button></a>
     </header>
-    <main>
+    <main class="border-yellow-400 border-4 flex flex-col h-full w-full min-h-screen min-w-screen overflow-scroll ">
+        <cover class="w-full">
+            <img class="block md:hidden w-inherit " src="images/storefront-remastered.jpeg" alt="">
+            <img class="hidden md:block w-inherit" src="images/dan-gold-07AAmZ1dECU-unsplash (2).jpg" alt="">
+        </cover>
+        <div class="border-green-400 border-4 flex flex-col">
+            <div class=" inline-flex space-x-4 items-center">
+                <ion-icon name="call" class="text-sky-300 text-xl"></ion-icon>
+                <a class="tracking-wide" href="tel:4104449411">(410)  444 - 9411</a>
+                <span ></span>
+            </div>
+            
+            <div class="inline-flex space-x-2 items-center">
+                <ion-icon name="location" class="text-sky-300 text-2xl"></ion-icon>
+                <span class="">​6622 Harford Rd. Baltimore, MD 21214</span>
+            </div>
+      </div>
+      <!--Logos-->
+      <div class="border-green-800 border-4 inline-flex space-x-8 items-center text-xl">
+        <a href="http://facebook.com/nilestylebarbershop">
+        <ion-icon name="logo-facebook"></ion-icon></a>
+
+        <a href="https://www.instagram.com/nilestylebarbers/">
+        <ion-icon name="logo-instagram"></ion-icon></a>
+
+        <a href="https://foursquare.com/v/nile-style-barbershop/4b588c07f964a520425d28e3">
+        <ion-icon name="logo-foursquare"></ion-icon></a>
+
+        <a href="https://www.yelp.com/biz/nile-style-barber-shop-baltimore">
+        <i class="fa-brands fa-yelp text-sm"></i></a>
+    </div>
+        <div class="md:border-green-500 flex flex-col items-center h-full w-full m-0">
+            <!-- <img class="w-3/6 h-3/6" src="./icons/nilestyleicon.png" alt=""> -->
+            <div class="border-white border-4 text-white">
+                <h1 class=" text-2xl text-white">Redefining Authenticity</h1>
+                <p class="text-white">The Nile Style is a modern barbershop with an old school vibe. Since 1998, we have served the community with a family-friendly and professional atmosphere. Our skilled barbers have years of experience and are dedicated to providing the best service possible. We specialize in classic haircuts, beard trims, and straight razor shaves, using only the finest grooming products. At The Nile Style, we pride ourselves on our attention to detail and our commitment to our clients. Come in and experience the perfect blend of old-fashioned barbering and contemporary style.Nile Style Barbershop serves men, women, and children. We accept appointments and walk-ins. Come in and enjoy free wi-fi, flat screen TV's, mellow music, and a friendly atmosphere.</p>
+            </div>
+        </div>
+        <section class="mb-8">
+            <!--Google Maps Embed-->
+            <div class="h-80 max-w-screen ">
+                <iframe class="rounded rounded-lg shadow-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.696869746942!2d-76.55455508463585!3d39.3631006795014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c80f559a143e73%3A0xc9c35ae3a8259af5!2sNile%20Style%20Barber%20Shop!5e0!3m2!1sen!2sus!4v1678732841777!5m2!1sen!2sus"     width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="inline-flex space-x-2 items-center">
+                <ion-icon name="mail" class="text-sky-300 text-xl"></ion-icon>
+                <span class="">contact@nilestylebarbers.com</span></div>
+        </section>
 
     </main>
-    <footer>
-        
+    <footer class="border-green-400 dark:bg-gray-800 w-full absolute bottom-0 mt-8">
+        <div class=" border-pink-800 w-full mx-0 container md:p-6 p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+          </span>
+          <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+              <li>
+                  <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+              </li>
+              <li>
+                  <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+              </li>
+              <li>
+                  <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline">Contact</a>
+              </li>
+          </ul>
+          </div>
     </footer>
+    
     
 </body>
 </html>
